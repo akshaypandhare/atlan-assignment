@@ -40,6 +40,13 @@ spec:
           mountPath: /etc/rabbitmq
         - name: data
           mountPath: /var/lib/rabbitmq/mnesia
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
       volumes:
       - name: config-volume
         configMap:
