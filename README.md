@@ -135,7 +135,7 @@
 <br>
 
 #### 1) Most probably this is not the issue with the network policy as if it was then the whole connectivity would have been impacted and not the intermittent connectivity issues.
-#### 2) We need to make sure which urls we are using for interacting with mongoDB deployment. For write related querries we need use mongodb-0.mongodb:27017 and for all read related querries we can use oother endpoints mongodb-1.mongodb:27017/mongodb-2.mongodb:27017
+#### 2) We need to make sure which urls we are using for interacting with mongoDB deployment. For write related querries we need use ```mongodb-0.mongodb:27017``` and for all read related querries we can use oother endpoints ```mongodb-1.mongodb:27017/mongodb-2.mongodb:27017```.
 #### 3) We need to check the memory and cpu utilisation of mongodb pods from grafana GUI and if they are using high resources then we need to vertically scale those deployment by increasing the limits in resources section of manifest.
 
 <br>
