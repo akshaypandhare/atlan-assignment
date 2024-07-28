@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html
+  namespace: frontend
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome to Nginx!</title>
+    </head>
+    <body>
+        <h1>Welcome to Atlan!</h1>
+        <p>This is a custom message served by Nginx.</p>
+    </body>
+    </html>

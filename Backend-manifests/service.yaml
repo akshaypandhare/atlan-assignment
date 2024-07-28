@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-service
+  namespace: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: nodejs
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
